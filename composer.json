@@ -1,0 +1,23 @@
+{
+    "name": "csa/xhprof-grapher",
+    "description": "A small library enabling graphing of xhprof traces",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Charles Sarrazin",
+            "email": "charles@sarraz.in"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "XhProf\\Graph\\": "src/" }
+    },
+    "require": {
+        "csa/xhprof-persister": "*"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.3-dev"
+        }
+    }
+}
