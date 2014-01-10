@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "7054c2e2aa1b74138715ba6cd63c07f4",
+    "packages": [
+        {
+            "name": "csa/xhprof-persister",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csarrazi/xhprof-persister.git",
+                "reference": "409a869274e8bd2cc5b2ffa35ef4baea02378364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csarrazi/xhprof-persister/zipball/409a869274e8bd2cc5b2ffa35ef4baea02378364",
+                "reference": "409a869274e8bd2cc5b2ffa35ef4baea02378364",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xhprof": "*",
+                "php": ">=5.4.0"
+            },
+            "suggest": {
+                "csa/xhprof-grapher": "Allows creating a callgraph from a trace"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "XhProf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charles Sarrazin",
+                    "email": "charles@sarraz.in"
+                }
+            ],
+            "description": "A small abstraction in front of the xhprof extension, with storage support",
+            "time": "2014-01-10 19:26:29"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
