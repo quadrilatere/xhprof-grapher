@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7054c2e2aa1b74138715ba6cd63c07f4",
+    "hash": "3bdd44f7521afef331ddb3460de4e37c",
     "packages": [
         {
             "name": "csa/xhprof-persister",
@@ -11,17 +11,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/csarrazi/xhprof-persister.git",
-                "reference": "409a869274e8bd2cc5b2ffa35ef4baea02378364"
+                "reference": "d1bd52ac14748304eab2e1598f5945104d0785f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csarrazi/xhprof-persister/zipball/409a869274e8bd2cc5b2ffa35ef4baea02378364",
-                "reference": "409a869274e8bd2cc5b2ffa35ef4baea02378364",
+                "url": "https://api.github.com/repos/csarrazi/xhprof-persister/zipball/d1bd52ac14748304eab2e1598f5945104d0785f2",
+                "reference": "d1bd52ac14748304eab2e1598f5945104d0785f2",
                 "shasum": ""
             },
             "require": {
                 "ext-xhprof": "*",
-                "php": ">=5.4.0"
+                "php": ">=5.3.3"
             },
             "suggest": {
                 "csa/xhprof-grapher": "Allows creating a callgraph from a trace"
@@ -29,7 +29,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3-dev"
+                    "dev-master": "0.4-dev"
                 }
             },
             "autoload": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "A small abstraction in front of the xhprof extension, with storage support",
-            "time": "2014-01-10 19:26:29"
+            "time": "2014-01-12 18:37:51"
         }
     ],
     "packages-dev": [

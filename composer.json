@@ -12,7 +12,7 @@
         "psr-4": { "XhProf\\Graph\\": "src/" }
     },
     "require": {
-        "csa/xhprof-persister": "~0.3"
+        "csa/xhprof-persister": "~0.4"
     },
     "minimum-stability": "dev",
     "extra": {
