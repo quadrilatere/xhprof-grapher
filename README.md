@@ -31,11 +31,17 @@ $loader = new Loader();
 $graph = $loader->load($storage, '1234567890abcdef');
 $dumper = new Dumper();
 
-if ('cli' === php_sapi_name()) {
+if ('cli' !== php_sapi_name()) {
     header('Content-type: image/png');
 }
 
 echo $dumper->dump($graph);
+```
+
+You can either use this script in your browser or using the command line
+
+```
+$ php ./script.php > output.png
 ```
 
 Todo
