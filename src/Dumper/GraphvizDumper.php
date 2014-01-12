@@ -2,6 +2,8 @@
 
 namespace XhProf\Graph\Dumper;
 
+use XhProf\Graph\Extractor\CriticalPathExtractor;
+use XhProf\Graph\Formatter\GraphvizFormatter;
 use XhProf\Graph\Graph;
 use XhProf\Graph\Visitor\GraphvizVisitor;
 
@@ -20,9 +22,16 @@ class GraphvizDumper implements DumperInterface
     /**
      * {@inheritDoc}
      */
-    public function dump(Graph $graph)
+    public function dump(Graph $graph, $callGraph = true)
     {
-        $visitor = new GraphvizVisitor();
+        $formatter = null;
+
+        if ($callGraph) {
+            $extractor = new CriticalPathExtractor();
+            $formatter = new GraphvizFormatter($extractor->extract($graph));
+        }
+
+        $visitor = new GraphvizVisitor($formatter);
         $visitor->visitGraph($graph);
         return $this->executeDotScript($visitor->getOutput());
     }
