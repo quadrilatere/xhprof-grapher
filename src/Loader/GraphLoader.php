@@ -9,13 +9,12 @@
  * file that was distributed with this source code
  */
 
-namespace XhProf\Graph\Loader\LoadingStrategy;
+namespace XhProf\Graph\Loader;
 
 use XhProf\Graph\Graph;
-use XhProf\Graph\Vertex;
 use XhProf\Trace;
 
-class InclusiveLoadingStrategy implements LoadingStrategyInterface
+class GraphLoader
 {
     public function load(Trace $trace)
     {
@@ -42,8 +41,7 @@ class InclusiveLoadingStrategy implements LoadingStrategyInterface
     private function findOrCreateVertex(Graph $graph, $name)
     {
         if (!$vertex = $graph->getVertex($name)) {
-            $vertex = new Vertex($name, $graph);
-            $graph->addVertex($vertex);
+            $vertex = $graph->createVertex($name);
         }
 
         return $vertex;

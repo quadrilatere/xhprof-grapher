@@ -27,8 +27,9 @@ use XhProf\Graph\Loader\XhProfDataLoader as Loader;
 use XhProf\Graph\Dumper\GraphvizDumper as Dumper;
 
 $storage = new FileStorage();
+$trace = $storage->fetch('1234567890abcdef');
 $loader = new Loader();
-$graph = $loader->load($storage, '1234567890abcdef');
+$graph = $loader->load($trace);
 $dumper = new Dumper();
 
 if ('cli' !== php_sapi_name()) {
@@ -59,3 +60,4 @@ This library is under the MIT license. For the full copyright and license
 information, please view the LICENSE file that was distributed with this source
 code.
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/csarrazi/xhprof-grapher/trend.png)](https://bitdeli.com/free "Bitdeli Badge")

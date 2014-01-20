@@ -46,6 +46,17 @@ class Graph implements VisitableInterface
     }
 
     /**
+     * @param $name
+     */
+    public function createVertex($name)
+    {
+        $vertex = new Vertex($name, $this);
+        $this->addVertex($vertex);
+
+        return $vertex;
+    }
+
+    /**
      * @param Vertex $vertex
      * @throws \LogicException
      */
