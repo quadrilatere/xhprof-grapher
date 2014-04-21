@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "57e9107887658300c02b474513d3b47c",
+    "hash": "6e2a6644ea121c3fd3585bb21e9e64e5",
     "packages": [
         {
             "name": "csa/xhprof-persister",
-            "version": "dev-master",
+            "version": "1.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/csarrazi/xhprof-persister.git",
-                "reference": "a3bd982fd30b5005a54564d70e65fb164d095803"
+                "reference": "a402eb7e2651d9543fc1544598380f1cb140ddee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csarrazi/xhprof-persister/zipball/a3bd982fd30b5005a54564d70e65fb164d095803",
-                "reference": "a3bd982fd30b5005a54564d70e65fb164d095803",
+                "url": "https://api.github.com/repos/csarrazi/xhprof-persister/zipball/a402eb7e2651d9543fc1544598380f1cb140ddee",
+                "reference": "a402eb7e2651d9543fc1544598380f1cb140ddee",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -48,7 +48,7 @@
                 }
             ],
             "description": "A small abstraction in front of the xhprof extension, with storage support",
-            "time": "2014-01-19 00:32:52"
+            "time": "2014-04-21 12:59:55"
         }
     ],
     "packages-dev": [
