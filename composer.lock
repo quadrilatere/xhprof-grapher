@@ -3,33 +3,34 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6e2a6644ea121c3fd3585bb21e9e64e5",
+    "hash": "45c2097719d6e0582d0cf1deb432f056",
     "packages": [
         {
-            "name": "csa/xhprof-persister",
-            "version": "1.0.x-dev",
+            "name": "csa/xhprof-common",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/csarrazi/xhprof-persister.git",
-                "reference": "a402eb7e2651d9543fc1544598380f1cb140ddee"
+                "url": "https://github.com/csarrazi/xhprof-common.git",
+                "reference": "de79680aa52e843a052ac49f17d8c4ffab3aceb6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/csarrazi/xhprof-persister/zipball/a402eb7e2651d9543fc1544598380f1cb140ddee",
-                "reference": "a402eb7e2651d9543fc1544598380f1cb140ddee",
+                "url": "https://api.github.com/repos/csarrazi/xhprof-common/zipball/de79680aa52e843a052ac49f17d8c4ffab3aceb6",
+                "reference": "de79680aa52e843a052ac49f17d8c4ffab3aceb6",
                 "shasum": ""
             },
             "require": {
-                "ext-xhprof": "*",
                 "php": ">=5.3.3"
             },
             "suggest": {
-                "csa/xhprof-grapher": "Allows creating a callgraph from a trace"
+                "csa/xhprof-grapher": "Allows creating a callgraph from a trace",
+                "csa/xhprof-persister": "Allows the persistance of traces",
+                "csa/xhprof-profiler": "Allows profiling and sampling of a PHP application"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -47,8 +48,8 @@
                     "email": "charles@sarraz.in"
                 }
             ],
-            "description": "A small abstraction in front of the xhprof extension, with storage support",
-            "time": "2014-04-21 12:59:55"
+            "description": "Common classes for the csa/xhprof-* libraries",
+            "time": "2014-05-21 06:14:32"
         }
     ],
     "packages-dev": [
